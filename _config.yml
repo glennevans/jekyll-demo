@@ -29,7 +29,7 @@ url: "/jekyll-demo" # the base hostname & protocol for your site, e.g. http://ex
 markdown: kramdown
 
 #permalink: /:categories/:title/
-permalink:  pretty
+#permalink:  pretty
 
 sass:
   style: compact # possible values: nested expanded compact compressed
