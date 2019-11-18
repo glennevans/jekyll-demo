@@ -5,8 +5,8 @@ title: main page
 <ul>
 {% for posts in site.posts%}
     <li>
-        <h3>{{posts.title}}<h3>
-            <p>{{ post.content |truncatehtml | truncatewords: 60 }}</p>
+        <a href="{{posts.url}}"> <h3>{{posts.title}}<h3></a>
+            <p>{{ posts.content |truncatehtml | truncatewords: 60 }}</p>
         </li>
 {% endfor%}
 <ul>
