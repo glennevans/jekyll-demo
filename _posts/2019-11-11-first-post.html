@@ -3,6 +3,15 @@ layout: portfolio-detail
 title: first page
 date: 2019-11-11
 categories: illustration
+img: glenn.jpg
 ---
+
+{% if page.img %}
+  <img class="caption__media" src="
+  {% for img in page.img %}
+   [{{site.baseurl}}/asset/img/{{img[1]}}]
+  {% endfor %}
+  ">
+{% endif %}
 
 <p>this is the demo page</p>
