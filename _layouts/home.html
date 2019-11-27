@@ -15,13 +15,15 @@ layout: default
                                             <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
                                             <p>{{ post.content |truncatehtml | truncatewords: 60 }}</p>
                                     </li>
+                                
+                                                    {% if page.tags == "nola" %}
+                                                          <p> I AM HERE</p>
+                                                       {% endif %}
                                     {% endfor %}
                             </ul>
                     </div>
             </li>
-                {% if page.tags == "nola" %}
-                        <p> I AM HERE</p>
-                {% endif %}
+
             {% endfor %}
     </ul>
 </div>
