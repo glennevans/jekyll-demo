@@ -16,7 +16,7 @@ layout: default
                                             <p>{{ post.content |truncatehtml | truncatewords: 60 }}</p>
                                     </li>
                                 
-                                                    {% if page.tags == "nola" %}
+                                                    {% if post.tags == "nola" %}
                                                           <p> I AM HERE</p>
                                                        {% endif %}
                                     {% endfor %}
