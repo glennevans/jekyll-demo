@@ -3,6 +3,21 @@ layout: default
 ---
 <div class="page">
     
-
+{% for post in site.posts %}
+    {% if post.tags contains 'nola' %}
+    <h1>SHOW THE post that has the nola tag</h2>
+    {% else %}
+    <h1>No nola tag</h1>
+{% endif %}
+    
+    
+    {% if post.tags contains 'artifact' %}
+    <h1>SHOW THE post that has the artifact tag</h2>
+    {% else %}
+    <h1>No artifact tag</h1>
+{% endif %}
+    
+    
+{% endfor %}
     
 </div>
