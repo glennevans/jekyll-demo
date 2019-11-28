@@ -6,7 +6,9 @@ layout: default
     <ul>
             {% for cat in site.categories %}
             <li>
-                {{page.tags}}
+                {% for tag in page.tags%}
+                {{ tag.tags }}
+                {% endfor %}
                     {% assign cat_name = cat[0] %}
                     <div class="Projects">
                             <h1>{{ cat_name }}</h1>
