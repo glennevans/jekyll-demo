@@ -6,7 +6,7 @@ layout: default
     <ul>
             {% for cat in site.categories %}
             <li>
-                {% for tag in page.tags%}
+                {% for tag in site.tags%}
                 {{ tag.tags }}
                 {% endfor %}
                     {% assign cat_name = cat[0] %}
