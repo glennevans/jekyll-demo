@@ -2,9 +2,11 @@
 layout: default
 ---
 <div class="page">
+    
     <ul>
             {% for cat in site.categories %}
             <li>
+                {{page.tags}}
                     {% assign cat_name = cat[0] %}
                     <div class="Projects">
                             <h1>{{ cat_name }}</h1>
@@ -15,10 +17,7 @@ layout: default
                                             <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
                                             <p>{{ post.content |truncatehtml | truncatewords: 60 }}</p>
                                     </li>
-                                
-                                                    {% if post.title == "nola" %}
-                                                          <p> I AM HERE</p>
-                                                       {% endif %}
+                               
                                     {% endfor %}
                             </ul>
                     </div>
